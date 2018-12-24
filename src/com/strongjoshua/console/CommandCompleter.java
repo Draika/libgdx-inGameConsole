@@ -25,7 +25,7 @@ public class CommandCompleter {
 	private String setString;
 
 	public CommandCompleter () {
-		possibleCommands = new ObjectSet<>();
+		possibleCommands = new ObjectSet<String>();
 		setString = "";
 	}
 
@@ -39,7 +39,7 @@ public class CommandCompleter {
 				possibleCommands.add(name);
 			}
 		}
-		iterator = new ObjectSetIterator<>(possibleCommands);
+		iterator = new ObjectSetIterator<String>(possibleCommands);
 	}
 
 	public void reset () {
@@ -65,7 +65,7 @@ public class CommandCompleter {
 	}
 
 	private Array<Method> getAllMethods (CommandExecutor ce) {
-		Array<Method> methods = new Array<>();
+		Array<Method> methods = new Array<Method>();
 		Method[] ms = ClassReflection.getDeclaredMethods(ce.getClass());
 		for (Method m : ms) {
 			if (m.isPublic()) {
