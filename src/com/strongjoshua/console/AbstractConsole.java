@@ -199,7 +199,7 @@ public abstract class AbstractConsole implements Console, Disposable {
 
 	private ArrayList<Method> getAllMethods () {
 		ArrayList<Method> methods = new ArrayList<Method>();
-		Class c = exec.getClass();
+		Class<?> c = exec.getClass();
 		while (c != Object.class) {
 			Collections.addAll(methods, ClassReflection.getDeclaredMethods(c));
 			c = c.getSuperclass();
