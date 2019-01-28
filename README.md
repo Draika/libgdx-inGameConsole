@@ -1,7 +1,7 @@
-Minor customisations to StrongJoshua/libgdx-inGameConsole
-
-See commit history from changes
-
+List of changes from base StrongJoshua/libgdx-inGameConsole:
+- Ported to Libgdx version 1.9.9 (some minor internal stuff in libgdx got changed which seems to have broken the original console)
+- Backported to Java 1.6 so that it compiles to android (since android runs Java 1.6 and doesn't like Java 1.8)
+- Implemented a change that allows you to spam up and enter to repeat the same command (original console will just cycle through history with each up press rather than on the second consequtive press)
 
 --- Stuff from base README.md file ---
 
