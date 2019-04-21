@@ -1,6 +1,11 @@
-List of changes from base StrongJoshua/libgdx-inGameConsole:
+EDIT: As of 21 April 2019 Strong Joshua has returned and merged my PRs
+
+This fork should now be even with the main fork
+
+--- List of contributions ---
+
 - Ported to Libgdx version 1.9.9 (some minor internal stuff in libgdx got changed which seems to have broken the original console)
-- Backported to Java 1.6 so that it compiles to android (since android runs Java 1.6 and doesn't like Java 8/1.8 classes even being present since it cant build a dex file from them)
+- Backported to Java 1.6 so that it compiles to android (since android runs Java 1.6 and doesn't like Java 8/1.8 classes even being present since it cant build a dex file from them) (I don't think I PR'd this into main fork)
 - Implemented a change that allows you to spam up and enter to repeat the same command (original console will just cycle through history with each up press rather than on the second consequtive press)
 
 --- Stuff from base README.md file ---
